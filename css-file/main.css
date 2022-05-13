@@ -1,0 +1,202 @@
+body {
+  background: url("../image/bus1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 10px;
+  margin: 20px;
+}
+
+td {
+  text-align: center;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  /* margin: 20px; */
+}
+
+header {
+  font-size: 150%;
+  font: normal;
+  margin: 20px;
+  position: relative;
+  top: 10%;
+}
+
+#img_div {
+  height: 100px;
+  width: 100px;
+  margin: 20px;
+}
+
+#head_div {
+  display: flex;
+  flex-direction: row;
+}
+
+h1,
+h3 {
+  /* height: 50px; */
+  color: antiquewhite;
+}
+
+nav {
+  background-color: rgba(250, 235, 215, 0.712);
+  margin: 20px;
+  border-radius: 10px;
+}
+
+#nav_bar li {
+  display: inline-flex;
+  flex-direction: row;
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 20%;
+  background-color: rgba(127, 255, 212, 0.623);
+  color: black;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: blue;
+}
+
+#outer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: rgba(200, 218, 189, 0.85);
+  margin: 20px;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: large;
+}
+
+main p {
+  text-align: justify;
+  color: rgb(26, 26, 31);
+  font-weight: 800;
+  padding: 10px;
+}
+
+#page_foot {
+  padding: 2px;
+  color: white;
+  background-color: rgba(60, 81, 196, 0.527);
+  text-align: center;
+  font-size: large;
+  position: relative;
+  bottom: 10%;
+}
+
+#page_foot a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* 
+jhfkjahjsfhajfgahflhaf */
+
+/* The side navigation menu */
+.sidenav {
+  height: auto;
+  /* 100% Full-height */
+  width: auto;
+  /* 0 width - change this with JavaScript */
+  position: relative;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  /* Stay at the top */
+  left: 0;
+  background: transparent;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 1px;
+  /* Place content 60px from the top */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.openbtn {
+  background-color: aqua;
+  /* height: 300px;
+    width: 300px; */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  /* padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: inline-block;
+    transition: 0.3s; */
+
+  display: inline-flex;
+  flex-direction: row;
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 20%;
+  background-color: rgba(127, 255, 212, 0.623);
+  color: black;
+  font-weight: bold;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left 0.5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="../js-file/add_bus.js"></script>
+    <script src="../js-file/admin_main.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../css-file/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Travel with us/add bus</title>
+</head>
+
+<body>
+    <div class="containeer">
+        <div id="head_div">
+            <div id="img_div">
+                <img src="../../image/logo.png" alt="main_travel_logo">
+            </div>
+            <div id="title_div">
+                <h1>Travel Agency</h1>
+                <h3>WT Project</h3>
+                <h3>ID : 20CP020 with 20CP035</h3>
+            </div>
+        </div>
+
+        <nav class="navbar m-5 navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" style="color:black;" href="../../admin/admin.html">Star Travel</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse mx-5" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link active" aria-current="page" href="../../admin/html-file/search_bus.html">Search
+                                Buses</a>
+                        </li>
+        
+                        <li class="nav-item dropdown mx-2">
+                            <a style="color: black;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Bus Add/Remove
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="../../admin/html-file/addbusinfo.html">Add bus</a></li>
+                                <li><a class="dropdown-item" href="../../admin/html-file/removeaddbusinfo.html">Remove bus</a>
+                                </li>
+        
+                            </ul>
+                        </li>
+        
+                        <li class="nav-item mx-2">
+                            <a class="nav-link active" href="../../admin/html-file/addrtinfo.html">Add route information</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link active" href="#" onclick="admin_logout()">Log Out</a>
+                        </li>
+        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div id="outer" class="home">
+                <h2>Enter The Valid Bus information To Add</h2>
+
+                <form id="add_bus">
+                    <div class="mb-3" name="bus_name">
+                        <label for="exampleInputEmail1" class="form-label">Bus Name</label>
+                        <input type="text" name="bus_name" class="form-control" id="bus_name" aria-describedby="User">
+                    </div>
+                    <div class="mb-3" name="bus_num">
+                        <label for="exampleInputEmail1" class="form-label">Bus Number</label>
+                        <input type="text" name="bus_num" class="form-control" id="bus_num" aria-describedby="User">
+                    </div>
+                    <div class="mb-3" name="capacity">
+                        <label for="exampleInputEmail1" class="form-label">Capacity</label>
+                        <input type="number" name="capacity" class="form-control" id="capacity"
+                            aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3" name="ac">
+                        <label for="exampleInputEmail1" class="form-label">AC y or n</label>
+                        <input type="text" name="ac" class="form-control" id="ac" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3" name="sleeper">
+                        <label for="exampleInputPassword1" class="form-label">Sleeper y or n</label>
+                        <input type="text" name="sleeper" class="form-control" id="sleeper">
+                    </div>
+
+                    <button type="button" onclick="add_bus()" class="btn btn-primary">Add Bus</button>
+                </form>
+
+            </div>
+        </main>
+
+        <footer id="page_foot">
+            <div>
+                <p>Copyright &copy; 2022 , All Rights Received</p>
+                <p id="con">Contact us : <a href="mailto:sagarnanera30@gmail.com">sagarnanera30@gmail.com</a> <a
+                        href="#"> |
+                    </a> <a href="mailto:aarjupatel922003@gmail.com">aarjupatel922003@gmail.com</a></p>
+
+            </div>
+        </footer>
+
+
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+            -->
+    </div>
+</body>
+
+</html>
