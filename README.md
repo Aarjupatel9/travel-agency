@@ -8,4 +8,4 @@ Backend is desiend with PHP
 
 The MySql Databse is  used for to store the data
 
-the email-functionallity is provided in this website while first time registering and at ticket booking
+the <u><B>email-functionallity</B></u> is provided in this website while first time registering and at ticket booking
